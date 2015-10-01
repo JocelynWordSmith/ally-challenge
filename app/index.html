@@ -5,6 +5,7 @@
         <title>ally code</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width" />
         <link rel="shortcut icon" href="/favicon.ico">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
@@ -20,34 +21,140 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <header id="header">
+            <span class="title">
+                <img src="images/piggy.png">
+                <span>urbank</span>
+            </span>
+            <ul>
+                <li class="nav_select" name="contact">contact</li>
+                <li class="nav_select" name="services">services</li>
+                <li class="nav_select active" name="company">company</li>
+                <div class="clearfix"></div>
+                <li class="nav_select" name="employee">employee</li>
+                <li class="nav_select" name="home">home</li>
+            </ul>
+            <div class="clearfix"></div>
+        </header>
 
+        <section id="main_content">
+            <section class="left_col">
+                <div class="main_header">
+                    <h1>Best Bank Ever!</h1>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor <a href="#">quam</a>, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu <a href="#">libero</a> sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</p>
+                </div>
+                <div class="main_reasons">
+                    <h3>Reasons We're Awesome:</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>   
+                </div>
+                <div>
+                <div class="main_mobile_info">
+                    <h3>Amazing Mobile Info</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur tortor a elit tempor, eget facilisis erat aliquam.</p>
+                    <img src="images/phone.png">
+                    <div class="clearfix"></div>
+                </div>
+                </div>
+                <div class="main_rates_table">
+                    <div class="rates_table_title">
+                        <h1>
+                            <span>Rates <span>
+                            <span> | </span>
+                            <span> Check them out.</span>
+                        </h1>
+                    </div>
+                        <table class="rates_table">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td>Annual Percentage Yield</td>
+                                    <td>Est. Earnings for 1 Year*</td>
+                                <tr>
+                            </thead>
+                            <tbody>
+                           
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>*Based on $50,000 deposit</td>
+                                </tr>
+                        </table>
+                </div>
+            </section>
 
-        <div class="hero-unit">
-          <h1>'Allo, 'Allo!</h1>
-          <p>You now have</p>
-          <ul>
-            <li>HTML5 Boilerplate</li>
-            <li>Sass</li>
+            <section class="right_col">
+                <div id="login_modal_button" class="login_button login_toggle">Login</div>
+                <div class="info_pane">
+                    <div class="tab_heading">
+                        <span id="news" class="tab_button active" >News</span>
+                        <span id="archive" class="tab_button">Archive</span>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="tab_content">
+                        <span>
+                            <h3><a href="#">Lorem ipsum delor</a></h3>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </span>
+                        <span>
+                            <h3><a href="#">Lorem ipsum delor</a></h3>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </span>                        
+                        <span>
+                            <h3><a href="#">Lorem ipsum delor</a></h3>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </span>                        
+                    </div>
+                </div>
+            </section>
+            
+            <div class="clearfix"></div>
+        </section>
 
-          </ul>
+        <footer id="footer">
+            <span>&#169; 2014 URBank</span>
+            <ul>
+                <li class="nav_select" name="contact">contact</li>
+                <li class="nav_select" name="services">services</li>
+                <li class="nav_select  active" name="company">company</li>
+                <div class="clearfix"></div>
+                <li class="nav_select" name="employee">employee</li>
+                <li class="nav_select" name="home">home</li>
+            </ul>
+            <div class="clearfix"></div>
         </div>
 
+
+        <div class="modal_grp" id="overlay"></div>
+        <div class="modal_grp" id="login_modal">
+            <h1>Sign In To Your Account</h1>
+            <div class="exit_modal login_toggle"><img src="images/close.png"></div>
+            <span>
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+            </span>
+
+            <span>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password">
+            </span>
+
+            <div class="login_button login_toggle">Login</div>
+        </div>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
